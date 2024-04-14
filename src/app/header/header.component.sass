@@ -1,0 +1,312 @@
+header
+  position: fixed
+  z-index: 14
+  width: 100%
+  left: 50%
+  transform: translateX(-50%)
+  color: #fff
+  padding: 13px 16px
+  top: 0
+  border-bottom: 1px solid #fff
+  transition: all .2s
+
+header::before
+  content: ""
+  position: absolute
+  background: #fff
+  top: -153px
+  left: -3px
+  border-radius: 19px
+  width: 324px
+  height: 265px
+  -webkit-transform: skew(20deg)
+  -moz-transform: skew(20deg)
+  -ms-transform: skew(20deg)
+  transform: skew(326deg) rotate(189deg)
+  transition: all .2s
+
+@media (max-width: 768px)
+  header::before
+    top: -166px
+    left: -28px
+
+.align-items-center
+  align-items: center !important
+
+.justify-content-between
+  justify-content: space-between !important
+
+.position-relative
+  position: relative !important
+
+.d-flex
+  display: flex !important
+
+.justify-content-between
+  justify-content: space-between !important
+
+header nav .nav_links 
+  display: flex
+  gap: 20px
+  width: 100%
+  justify-content: space-between
+
+@media (min-width: 1200px)
+  h1
+    font-size: 2.5rem
+
+    h1
+      font-size: calc(1.375rem + 1.5vw)
+
+    h6, h5, h4, h3, h2, h1
+      margin-top: 0
+      margin-bottom: .5rem
+      font-weight: 500
+      line-height: 1.2
+      color: var(--bs-heading-color)
+
+header nav .logo, header nav .menu-btn
+      position: relative
+      z-index: 1
+
+header .logo, header .menu-btn
+      position: relative
+      z-index: 1
+
+@media (max-width: 500px)
+header .logo 
+  height: 54px
+  left: -7px
+
+header .logo
+  position: absolute
+  height: 60px
+  transform: translate(11px, -3px)
+  transition: all .2s
+  display: block
+  top: 11px
+
+.img-contain
+  position: relative
+
+a
+  text-decoration: none
+  color: inherit
+
+.img-contain img, .img-contain video
+  object-fit: contain
+  object-position: center
+  -o-object-fit: contain
+  -o-object-position: center
+  height: 100%
+
+img, svg
+  vertical-align: middle
+
+*, ::after, ::before
+  box-sizing: border-box
+
+header nav .nav_links .mobile-menu 
+  display: flex
+  gap: 20px
+  list-style: none
+  margin-bottom: 0
+  padding-left: 14px
+ul
+  padding-left: 22px
+  margin-bottom: 0
+
+ol, ul, dl
+  margin-top: 0
+  margin-bottom: 1rem
+
+ol, ul
+  padding-left: 2rem
+
+dl, ol, ul
+  margin-top: 0
+  margin-bottom: 1rem
+
+header nav .nav_links .mobile-menu .active::after 
+  content: ""
+  position: absolute
+  border-top: 32px solid rgba(255, 255, 255, 0)
+  border-left: 27px solid #f87125
+  left: 0px
+  border-radius: 0px 0px 10px 6px
+  width: 38px
+  height: 28px
+  -webkit-transform: skew(20deg)
+  -moz-transform: skew(20deg)
+  -ms-transform: skew(20deg)
+  -o-transform: skew(20deg)
+  transform: skew(-4deg) rotate(131deg)
+  bottom: -58px
+  z-index: -1
+
+header nav .nav_links .mobile-menu a, header nav .nav_links .mobile-menu button 
+  position: relative
+  display: flex
+  align-items: center
+  color: #fff
+  line-height: 1
+  font-size: 17px
+  font-weight: 600
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled)
+  cursor: pointer
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled)
+  cursor: pointer
+
+button
+  border: none
+  background: none
+  padding: 0
+
+button, select
+  text-transform: none
+
+input, button, select, optgroup, textarea
+  margin: 0
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+a
+  text-decoration: none
+  color: inherit
+
+a
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1))
+  text-decoration: underline
+
+.bx.bxs-down-arrow
+  font-size: 7.5px
+  padding: 5px 0px 0px 5px
+
+*, *::before, *::after
+  box-sizing: border-box
+
+*, ::after, ::before
+  box-sizing: border-box
+
+header nav .nav_links .mobile-menu>.menu-item.menu-item-has-children:hover .sub-menu 
+  top: 65%
+  visibility: visible
+  opacity: 1
+
+header nav .nav_links .mobile-menu > .menu-item.menu-item-has-children>.sub-menu 
+  position: absolute
+  top: calc(100% + 10px)
+  padding: 20px
+  min-width: 300px
+  padding-top: 30px
+  visibility: hidden
+  opacity: 0
+  transition: all .3s
+
+header nav .nav_links .mobile-menu > .menu-item.menu-item-has-children > .sub-menu:after 
+  content: ""
+  position: absolute
+  top: 18px
+  left: 15%
+  transform: translateX(-24%) rotate(44deg)
+  width: 30px
+  height: 30px
+  background: #fff
+  border-radius: 4px 0 0 8px
+  box-shadow: rgba(0,0,0,.1) -8px -7px 14px
+
+ol ol, ul ul, ol ul, ul ol 
+  margin-bottom: 0
+
+header nav .nav_links .mobile-menu>.menu-item.menu-item-has-children>.sub-menu .menu-item-has-children 
+  background: #fff
+  box-shadow: 0 0 10px rgba(34,34,34,.24)
+  display: flex
+  flex-direction: column
+  border-radius: 15px
+  left: -90px
+  position: relative
+
+@media (min-width: 1200px)
+ header nav .nav_links .mobile-menu>.menu-item.menu-item-has-children .submenu-headline 
+  display: none
+
+header nav .nav_links .mobile-menu>.menu-item.menu-item-has-children .submenu-headline 
+  background: #f87125
+  color: #fff
+  justify-content: left
+  padding: 18px 25px
+
+header nav .nav_links .mobile-menu a, header nav .nav_links .mobile-menu button 
+  position: relative
+  display: flex
+  align-items: center
+  color: #fff
+  line-height: 1
+  font-size: 17px
+  font-weight: 600
+
+@media (min-width: 1200px)
+ header nav .nav_links .mobile-menu>.menu-item.menu-item-has-children>.sub-menu .sub-menu 
+  display: grid
+  gap: 0 18px
+  width: 100%
+  padding: 20px 16px
+
+li
+  display: list-item
+  text-align: -webkit-match-parent
+  unicode-bidi: isolate
+
+header nav .nav_links .mobile-menu>.menu-item.menu-item-has-children>.sub-menu .sub-menu 
+  list-style: none
+
+header nav .nav_links .mobile-menu>.menu-item.menu-item-has-children>.sub-menu .menu-item-has-children a 
+  color: #222
+  border-radius: 5px
+  transition: box-shadow 0.3s ease
+
+header nav .nav_links .mobile-menu > .menu-item.menu-item-has-children > .sub-menu .menu-item-has-children a:hover
+  background-color: rgba(90, 87, 87, 0.153)
+
+@media (min-width: 1200px)
+header nav .nav_links .mobile-menu>.menu-item.menu-item-has-children>.sub-menu .sub-menu a 
+  padding: 12px 12px
+  border-bottom: 1px solid #d9d9d9
+
+header nav .nav_links .mobile-menu a, header nav .nav_links .mobile-menu button 
+  position: relative
+  display: flex
+  align-items: center
+  color: #fff
+  line-height: 1
+  font-size: 17px
+  font-weight: 600
+
+a
+  text-decoration: none
+  color: inherit
+
+.btn.primary-white
+  background: #fff
+  color: #1e1e1e !important
+  transition: all .3s
+
+.btn
+  padding: 10px 27px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: -webkit-fit-content
+  width: -moz-fit-content
+  width: fit-content
+  min-width: 148px
+  border-radius: 12px
+  font-weight: 500
+  font-size: 16px
+  transform-origin: center
+  will-change: transform
+  transition: all .2s
+  height: 40px
